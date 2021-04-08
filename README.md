@@ -1,1 +1,1 @@
-# school-aplication-express
+# School Application

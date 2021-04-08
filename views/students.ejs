@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <center><h1>Students Data</h1></center>
+       <center><a href="/students/add">add students</a></center> 
+    <center><table border>
+        <tr>
+          <th>id</th>
+          <th>first_name</th>
+          <th>last_name</th>
+          <th>email</th>
+          <th>options</th>
+      </tr>  
+      <%for (let i = 0 ; i < data.length ; i++) {%>
+        <tr>
+            <td><%=data[i].id%></td>
+            <td><%=data[i].first_name%></td>
+            <td><%=data[i].last_name%></td>
+            <td><%=data[i].email%></td>
+            <td><a href="/students/<%=data[i].id%>/edit">edit</a>|<a href="/students/<%=data[i].id%>/delete">delete</a></td>
+        </tr>
+        <% } %>
+  
+    
+    </table></center>
+    </body>
+</html>
